@@ -7,8 +7,6 @@ export default function Page(){
    return (
        <div>
         <p><Link className="font-bold bg-blue-200 p-0 m-1" href="../">Home</Link></p>
-
-
            <Title/>
            <Title/>
            <Title/>
