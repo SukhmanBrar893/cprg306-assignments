@@ -5,7 +5,7 @@ import NewItem from "./new-item";
 import ItemList from "./item-list";
 import MealIdeas from "./meal-ideas";
 import itemsData from "./item.json";
-
+import Link from "next/link";
 export default function Page() {
     const [items, setItems] = useState(itemsData);
     const [selectedItemName, setSelectedItemName] = useState("");
@@ -26,6 +26,8 @@ export default function Page() {
 
     return (
         <main className="relative min-h-screen bg-purple-200 p-6 flex">
+            <p><Link className="font-bold bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md transition duration-300 hover:bg-blue-600 hover:shadow-lg active:scale-95"
+         href="../">Home</Link></p>
             <div className="w-1/2">
                 <h1 className="text-3xl font-bold text-gray-700 mb-6">Shopping List</h1>
                 <NewItem onAddItem={handleAddItem} />
