@@ -8,6 +8,8 @@ export default function Page() {
 
   return (
     <main className="p-8 min-h-screen bg-gray-900 text-white">
+      <p><Link className="font-bold bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md transition duration-300 hover:bg-blue-600 hover:shadow-lg active:scale-95"
+         href="../">Home</Link></p>
       {!user ? (
         <div className="text-center">
           <h1 className="text-3xl mb-4">Welcome to the Shopping List App</h1>
